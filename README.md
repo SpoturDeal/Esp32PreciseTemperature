@@ -1,4 +1,4 @@
-# Esp32PreciseTemperatue
+# Esp32PreciseTemperature
 A precise temperature sensor setup for Domoticz
 
 ## Built a Precise thermometer to use with Domoticz
