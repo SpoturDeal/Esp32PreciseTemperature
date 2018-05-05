@@ -2,9 +2,9 @@
 A precise temperature sensor setup for Domoticz
 
 ## Built a Precise thermometer to use with Domoticz
-Most temperature sensors are based on an DS18B20 sensors, the disadvantage of this sensor is that is heats up itself. This reults in a higher temperature.
+Most temperature sensors are based on an DS18B20 sensors, the disadvantage of this sensor is that is heats up itself. This results in a higher temperature.
 By using an InfraRed sensor you are able the measure the temperature in the field of view of the sensor. (you sensor could be 40C (104F) in the sun, but in field of view the temperature is on 21.2C (70C)
-If you are using the sensor for controlling something else the precise temperute could benefit
+If you are using the sensor for controlling something else the precise temperatue could benefit. The temperature are very fast because there is no cooling or heating of the sensor in our object measurement.
 
 ## Materials to use
 Board: DOIT ESP32 DEVKIT V1, 80Mhz, 4MB(32Mhz),921600 None op COM3 <a href="https://www.banggood.com/ESP32-Development-Board-WiFiBluetooth-Ultra-Low-Power-Consumption-Dual-Cores-ESP-32-ESP-32S-Board-p-1109512.html?p=VQ141018240205201801">Available at Banggood</a> (about EUR 5.50)
@@ -68,4 +68,6 @@ String domoticzIdx ="IDX_SEE_DEVICES_IN_DOMOTICZ";
 #### Sensor: Actual temperature of the sensor, object is the temperature the sensor faces in this case my room
 ![Monitor](/Monitor.png?raw=true "Serial Monitor output") 
 
+## Temperature data
+The data is sent every minute at the 20th second (don't want to interfere with timed events that start on whole minute) If the temperature changes more then 1C or 2F the change is send direct. In the webinterface the data from Domoticz is refreshed every 10 seconds. So you may have to wait a few seconds to see the change on the screen.
 
