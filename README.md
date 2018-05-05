@@ -9,12 +9,12 @@ If you are using the sensor for controlling something else the precise temperute
 ## Materials to use
 Board: DOIT ESP32 DEVKIT V1, 80Mhz, 4MB(32Mhz),921600 None op COM3 <a href="https://www.banggood.com/ESP32-Development-Board-WiFiBluetooth-Ultra-Low-Power-Consumption-Dual-Cores-ESP-32-ESP-32S-Board-p-1109512.html?p=VQ141018240205201801">Available at Banggood</a> (about EUR 5.50)
 
-Sensor: <a href="https://www.banggood.com/nl/MLX90614ESF-AAA-Non-contact-Human-Body-Infrared-IR-Temperature-Sensor-Module-For-Arduino-p-1100990.html?p=VQ141018240205201801">Available at Banggood</a> (about EUR 10.00)
+Sensor: MLX90614ESF Infra red non-touch sensor <a href="https://www.banggood.com/nl/MLX90614ESF-AAA-Non-contact-Human-Body-Infrared-IR-Temperature-Sensor-Module-For-Arduino-p-1100990.html?p=VQ141018240205201801">Available at Banggood</a> (about EUR 10.00)
 
 ## Wired connections
 
-|From|---|To|
-|---|---|---|
+|From||To|
+|---||---|
 |**MLX 90614**|--|**ESP32**|
 |SDA|->|D21|
 |SCL|->|D23|
