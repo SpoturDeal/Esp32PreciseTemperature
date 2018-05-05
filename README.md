@@ -20,7 +20,33 @@ Sensor: MLX90614ESF Infra red non-touch sensor <a href="https://www.banggood.com
 |SCL|->|D23|
 |Vin|->|3v3|
 |GND|->|GND|
- 
+
+## Set up Domoticz
+### Add Hardware (if needed)
+Click Setup -> Hardware
+
+set Name ="Virtual Sensor"
+
+set Type ="Dummy (Does nothing, for virtual device only)"
+
+set Data Time ="Disabled"
+
+Click Add
+
+
+Click Create Virtual Sensor
+
+Type a name "whatever you like"
+
+Set Sensortype to "Temperature"
+
+### Find Idx of device in Devices
+Click Setup -> Devices
+
+Click Idx(the top row of the label so it sort the high to lowest)
+
+write down the Idx number 
+
 ## Needed settings
 To use the Domoticz API you must **base64 encode** your username and password see the link below
 
@@ -38,4 +64,8 @@ String domoticzPort="PORT";
 // The Idx of the domoticz device used string to easy adding to getstring
 String domoticzIdx ="IDX_SEE_DEVICES_IN_DOMOTICZ";
 ```
- 
+## Project Photo
+#### Sensor: Actual temperature of the sensor, object is the temperature the sensor faces in this case my room
+![Monitor](/Monitor.png?raw=true "Serial Monitor output") 
+
+
