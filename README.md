@@ -66,7 +66,8 @@ String domoticzIdx ="IDX_SEE_DEVICES_IN_DOMOTICZ";
 ```
 ## Project Photo
 #### Sensor: Actual temperature of the sensor, object is the temperature the sensor faces in this case my room
-![Monitor](/Monitor.png?raw=true "Serial Monitor output") 
+![Serail Monitor output](/Monitor.png?raw=true "Serial Monitor output") 
+![At the test](/Onboard.jpg?raw=true "Test built") 
 
 ## Temperature data
 The data is sent every minute at the 20th second (don't want to interfere with timed events that start on whole minute) If the temperature changes more then 1C or 2F the change is send direct. In the webinterface the data from Domoticz is refreshed every 10 seconds. So you may have to wait a few seconds to see the change on the screen.
