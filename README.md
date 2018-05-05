@@ -13,8 +13,8 @@ Sensor: MLX90614ESF Infra red non-touch sensor <a href="https://www.banggood.com
 
 ## Wired connections
 
-|From||To|
-|---||---|
+|From|-|To|
+|---|--|---|
 |**MLX 90614**|--|**ESP32**|
 |SDA|->|D21|
 |SCL|->|D23|
