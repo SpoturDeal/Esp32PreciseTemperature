@@ -11,6 +11,9 @@ Board: DOIT ESP32 DEVKIT V1, 80Mhz, 4MB(32Mhz),921600 None op COM3 <a href="http
 
 Sensor: MLX90614ESF Infra red non-touch sensor <a href="https://www.banggood.com/nl/MLX90614ESF-AAA-Non-contact-Human-Body-Infrared-IR-Temperature-Sensor-Module-For-Arduino-p-1100990.html?p=VQ141018240205201801">Available at Banggood</a> (about EUR 10.00)
 
+ ## Where to obtain the parts and materials
+ Banggood is where I buy all my parts <a href="https://bit.ly/2IBUsds">Visit Banggood</a>
+
 ## Wired connections
 
 |From|-|To|
