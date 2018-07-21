@@ -1,6 +1,14 @@
 # Esp32PreciseTemperature
 A precise temperature sensor setup for Domoticz
 
+## July 21st, 2018 Updated to use with OTA and MQTT 
+The sketch named temp_met_ir_OTA_MQTT2 has been updated to use with OTA (over the air updates) and publishing the temperature through MQTT to your domoticz system. 
+The temperature is send at least every 10 minutes or when a change of more the 0.2C occurs. Once an hour the ESP32 will restart, sometimes it will hang and the restart prevents that)
+In this version you need two files
+  temp_met_ir_OTA_MQTT2.ino
+  credentials.h
+All your passwords are in credentials.h  
+
 ## Built a Precise thermometer to use with Domoticz
 Most temperature sensors are based on an DS18B20 sensors, the disadvantage of this sensor is that is heats up itself. This results in a higher temperature.
 By using an InfraRed sensor you are able the measure the temperature in the field of view of the sensor. (you sensor could be 40C (104F) in the sun, but in field of view the temperature is on 21.2C (70C)
